@@ -40,7 +40,7 @@ echo "0 Exit"
        expr $number1 - $number2
        ;;
        "exit" | "Exit" | "EXIT" | 0)
-       echo "Exit selected"
+       echo "Thanks for using calculator by the great Manpreet ;)"
        exit 0
        ;;
      esac
