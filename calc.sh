@@ -12,3 +12,23 @@
 
 
 echo "Hi $1", welcome to Calculator by Manpreet Singh
+
+
+#Keepising user in the program 
+while true;do 
+    
+    read choice
+       case $choice in
+       "add" | "Add" | "ADD"| 1 )
+       echo "Add selected"
+       ;;
+       "subtract" | "Subtact" |"Subtract"| 2 )
+       echo "Subtract selected"
+       ;;
+       "exit" | "Exit" | "EXIT" | 0)
+       echo "Exit selected"
+       exit 0
+       ;;
+     esac
+ done
+
