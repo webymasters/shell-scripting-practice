@@ -18,13 +18,22 @@ read number1
 read number2
 
 echo "You have entered $number1 and $number2"
+
+
 #Keepising user in the program 
 while true;do 
-    
+
+echo "What you would like to do with $number1 and $number2"
+
+echo "1. Add"
+echo "2. Subtract"
+echo "0 Exit"
+
     read choice
        case $choice in
        "add" | "Add" | "ADD"| 1 )
-       echo "Add selected"
+       echo "Sum of $number and $number2 is"
+       expr $number1 + $number2
        ;;
        "subtract" | "Subtact" |"Subtract"| 2 )
        echo "Subtract selected"
