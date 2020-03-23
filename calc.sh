@@ -11,9 +11,13 @@
 # When the operation is complete, redisplay the menu.
 
 
-echo "Hi $1", welcome to Calculator by Manpreet Singh
+echo "Hi $1, welcome to Calculator by Manpreet Singh"
 
+echo "Enter two numbers"
+read number1
+read number2
 
+echo "You have entered $number1 and $number2"
 #Keepising user in the program 
 while true;do 
     
