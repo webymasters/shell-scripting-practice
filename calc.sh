@@ -27,6 +27,8 @@ echo "What you would like to do with $number1 and $number2"
 
 echo "1. Add"
 echo "2. Subtract"
+echo "3. Multiply"
+echo "4. Divide"
 echo "0 Exit"
 
     read choice
@@ -35,9 +37,17 @@ echo "0 Exit"
        echo "Sum of $number and $number2 is"
        expr $number1 + $number2
        ;;
-       "subtract" | "Subtact" |"Subtract"| 2 )
+       "subtract" | "Subtact" |"SUBTRACT"| 2 )
        echo "Difference of $number and $number2 is"
        expr $number1 - $number2
+       ;;
+       "multiply" | "Multiply" |"MULTIPLY"| 3 )
+       echo "Multiplication of $number1 and $number2 is"
+       expr $number1 * $number2
+       ;;
+       "divide" | "Divide" |"DIVIDE"| 4 )
+       echo "Division of $number1 and $number2 is"
+       expr $number1 / $number2
        ;;
        "exit" | "Exit" | "EXIT" | 0)
        echo "Thanks for using calculator by the great Manpreet ;)"
