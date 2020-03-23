@@ -36,7 +36,8 @@ echo "0 Exit"
        expr $number1 + $number2
        ;;
        "subtract" | "Subtact" |"Subtract"| 2 )
-       echo "Subtract selected"
+       echo "Difference of $number and $number2 is"
+       expr $number1 - $number2
        ;;
        "exit" | "Exit" | "EXIT" | 0)
        echo "Exit selected"
