@@ -23,6 +23,7 @@ echo "You have entered $number1 and $number2"
 #Keepising user in the program 
 while true;do 
 
+echo "#########################"
 echo "What you would like to do with $number1 and $number2"
 
 echo "1. Add"
@@ -34,22 +35,27 @@ echo "0 Exit"
     read choice
        case $choice in
        "add" | "Add" | "ADD"| 1 )
-       echo "Sum of $number and $number2 is"
+       echo "#########################"
+       echo "Sum of $number1 and $number2 is"
        expr $number1 + $number2
        ;;
        "subtract" | "Subtact" |"SUBTRACT"| 2 )
-       echo "Difference of $number and $number2 is"
+       echo "#########################"
+       echo "Difference of $number1 and $number2 is"
        expr $number1 - $number2
        ;;
        "multiply" | "Multiply" |"MULTIPLY"| 3 )
+       echo "#########################"
        echo "Multiplication of $number1 and $number2 is"
        expr $number1 * $number2
        ;;
        "divide" | "Divide" |"DIVIDE"| 4 )
+       echo "#########################"
        echo "Division of $number1 and $number2 is"
        expr $number1 / $number2
        ;;
        "exit" | "Exit" | "EXIT" | 0)
+       echo "#########################"
        echo "Thanks for using calculator by the great Manpreet ;)"
        exit 0
        ;;
