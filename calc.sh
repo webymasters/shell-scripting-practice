@@ -9,3 +9,6 @@
 # If the selection matches a supported operation, execute the operation.
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
+
+
+echo "Hi $1", welcome to Calculator by Manpreet Singh
