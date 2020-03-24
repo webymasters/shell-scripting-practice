@@ -20,6 +20,8 @@ echo "1. Add"
 echo "2. Subtract"
 echo "3. Multiply"
 echo "4. Divide"
+echo "5. Remainder"
+echo "6. Change Numbers"
 echo "0 Exit"
 # Capturing the user selection.
     read choice
@@ -49,6 +51,12 @@ echo "0 Exit"
        echo "#########################"
        echo "Remainder of $number1 and $number2 is"
        expr $number1 % $number2
+       ;;
+       "change" | "Change" |"CHANGE"| 6 )
+       echo "#########################"
+       echo "Enter two new numbers"
+       read number1    
+       read number2
        ;;
        "exit" | "Exit" | "EXIT" | 0)
        echo "#########################"
